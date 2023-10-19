@@ -1,0 +1,58 @@
+<%- include("partials/header.ejs") %>
+
+    <div class="container student-head">
+        <h1>
+            Please Fill the student Details
+        </h1>
+    </div>
+    <div class="formdata"> 
+        <div id="form-container">
+            <form>
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name">
+
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+
+                <label for="mobile-number">Mobile Number</label>
+                <input type="tel" id="mobile-number" name="mobile-number">
+
+                <label for="vill">Village</label>
+                <input type="text" id="vill" name="vill">
+
+                <label for="city">City</label>
+                <input type="text" id="city" name="city">
+
+                <label for="state">State</label>
+                <input type="text" id="state" name="state">
+
+                <label for="pincode">Pincode</label>
+                <input type="text" id="pincode" name="pincode">
+
+                <label for="enrollment-date">Date of Enrollment</label>
+                <input type="date" id="enrollment-date" name="enrollment-date">
+
+                <label for="amount-paid">Amount Paid</label>
+                <input type="text" id="amount-paid" name="amount-paid">
+
+                <label for="shift">Shift</label>
+                <select id="shift" name="shift">
+                    <option value="morning">Morning</option>
+                    <option value="afternoon">Afternoon</option>
+                    <option value="evening">Evening</option>
+                    <option value="evening">Night</option>
+                </select>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+    <%- include("partials/footer.ejs") %>
