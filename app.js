@@ -56,6 +56,17 @@ app.get("/login-btn", (req, res) => {
     res.render("index.ejs")
 })
 
+app.get("/showdetail", (re, res) => {
+    Student.find({})
+        .then((studentDetail) => {
+            res.render("detail.ejs", ({ student: studentDetail }));
+        })
+        .catch((err) => {
+            console.log(err);
+        })
+
+})
+
 app.post("/login", (req, res) => {
     const formusername = req.body["username"];
     const formpassword = req.body["password"];

@@ -37,3 +37,18 @@ button {
     cursor: pointer;
     margin-top: 10px;
 }
+
+table,
+th,
+td {
+    border: 1px solid black;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+.td-head {
+    background-color: yellow;
+    font-weight: bold;
+}

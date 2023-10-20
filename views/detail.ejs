@@ -1,0 +1,62 @@
+<%- include("partials/header.ejs") %>
+
+    <div class="container">
+        <table>
+            <tr>
+                <td class="td-head">Name</td>
+                <td class="td-head">Email</td>
+                <td class="td-head">Phone Number</td>
+                <td class="td-head">Address</td>
+                <td class="td-head">City</td>
+                <td class="td-head">State</td>
+                <td class="td-head">Zip Code</td>
+                <td class="td-head">Amount Paid</td>
+                <td class="td-head">Date of Payment</td>
+                <td class="td-head">Shift</td>
+            </tr>
+            <% student.forEach(element=> { %>
+                <tr>
+                    <td>
+                        <%= element.firstname %>
+                    </td>
+                    <td>
+                        <%= element.email %>
+                    </td>
+                    <td>
+                        <%= element.mobilenumber %>
+                    </td>
+                    <td>
+                        <%= element.vill %>
+                    </td>
+                    <td>
+                        <%= element.city %>
+                    </td>
+                    <td>
+                        <%= element.state %>
+                    </td>
+                    <td>
+                        <%= element.pincode %>
+                    </td>
+                    <td>
+                        <%= element.amountpaid %>
+                    </td>
+                    <td>
+                        <%= element.dateofenrollment %>
+                    </td>
+
+                    <td>
+                        <%= element.shift %>
+                    </td>
+                </tr>
+                <% }) %>
+
+
+
+        </table>
+    </div>
+
+
+
+
+
+    <%- include("partials/footer.ejs") %>
