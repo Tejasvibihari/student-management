@@ -1,10 +1,20 @@
 <%- include("partials/header.ejs") %>
 
-    <div class="container student-head">
-        <h1>
-            Please Fill the student Details
-        </h1>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="container student-head">
+                <h1>
+                    Please Fill the student Details
+                </h1>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <a href="/showdetail">
+                <button class="btn-primary">Student Detail</button>
+            </a>
+        </div>
     </div>
+
     <div class="formdata">
         <div id="form-container">
             <form action="/admin" method="post">
